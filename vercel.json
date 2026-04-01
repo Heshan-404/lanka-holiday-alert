@@ -2,13 +2,13 @@
   "crons": [
     {
       "path": "/api/check",
-      "schedule": "15 8 1 * *"
+      "schedule": "30 3 10 * *"
     }
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/api/check"
+       "source": "/",
+       "destination": "/api/check"
     }
   ]
 }

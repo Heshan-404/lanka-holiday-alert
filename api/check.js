@@ -78,7 +78,7 @@ module.exports = async function handler(req, res) {
       .split(',')
       .map(t => t.trim().toLowerCase());
 
-    const isScheduledRun = (today.day + 9) === scheduledDay; // TEMPORARY FOR TESTING
+    const isScheduledRun = today.day === scheduledDay;
     
     const targetDate = isScheduledRun ? today.plus({ months: 1 }) : today;
     const holidays = await withRetry(() => fetchHolidays(targetDate.year, targetDate.month));
