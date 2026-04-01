@@ -4,5 +4,11 @@
       "path": "/api/check",
       "schedule": "45 7 1 * *"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/check"
+    }
   ]
 }
