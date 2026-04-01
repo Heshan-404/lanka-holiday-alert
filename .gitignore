@@ -1,0 +1,6 @@
+node_modules
+.env
+.vercel
+*.txt
+list_all_2026.js
+package-lock.json
